@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page2">
+    <img class="bas" src="img/背景图3/背景图3（底图）.png" alt="">
+    <img src="img/背景图3/背景图3（猫爪）.png" alt="">
+    <img src="img/背景图3/背景图3（爱心）.png" alt="">
+
+
+    <div class="content">
+      <div class="title" style="visibility: hidden;">
+        您选择了A版专辑
+      </div>
+
+      <div class="center">
+        
+        <img class="ba" src="img/背景图3/背景图3（文字区边框）.png" alt="">
+        <img src="img/特典6封面图.JPG" alt="" class="img">
+        <div class="text">
+          <img src="img/特典6封面图.JPG" alt="" class="con">
+          <span>【特典𝐏𝐀𝐑𝐓𝟔】「琴洲晚玫」空调毯</span>
+          <div class="sort">
+            该特典不是1v1特典，后续无需补专！<br/>
+            购买链接请点击：<a href="  https://k.youshop10.com/0MfgcPgh?a=b&p=iphone&wfr=BuyercopyURL&share_relation=82e8a9be4d325c92_1306282227_1">👉🏻「琴洲晚玫」空调毯👈🏻</a><br/>
+          价格：39r<br/>
+          <img src="img/特典6实物图.JPG" alt="">
+          <img src="img/特典6介绍图.JPG" alt="">
+          </div>
+
+
+        </div>
+
+
+        <a href="page4.html" class="fh">返回</a>
+        
+      </div>
+    </div>
+
+
+    <footer style="text-align: center;">
+      <a href="page1.html">开始选购</a><a href="page3.html">Q&A</a><a href="">小卡一览</a>
+
+      <img src="img/背景图3/小熊猫3.png" alt="">
+    </footer>
+  </div>
+
+
+
+  <div id="imgShow">
+    <img src="" alt="">
+  </div>
+
+
+  <script>
+    const imgList = document.querySelectorAll('.center .sort img')
+    const imgBox = document.querySelector('#imgShow')
+    const img = imgBox.querySelector('img')
+    imgList.forEach((tag, index) => {
+      tag.addEventListener('click', () => {
+        img.src = tag.src
+        imgBox.classList.add('open')
+      })
+    })
+
+
+    imgBox.addEventListener('click', tag => {
+      tag.stopPropagation()
+      imgBox.classList.remove('open')
+    })
+  </script>
+</body>
+</html>
