@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page2">
+    <img class="bas" src="img/背景图3/背景图3（底图）.png" alt="">
+    <img src="img/背景图3/背景图3（猫爪）.png" alt="">
+    <img src="img/背景图3/背景图3（爱心）.png" alt="">
+
+
+    <div class="content">
+      <div class="title" style="visibility: hidden;">
+        您选择了A版专辑
+      </div>
+
+      <div class="center">
+        
+        <img class="ba" src="img/背景图3/背景图3（文字区边框）.png" alt="">
+        <img src="img/73671fd1ac4a165045537d447dca44e.png" alt="" class="img">
+        <div class="text">
+          <img src="img/73671fd1ac4a165045537d447dca44e.png" alt="" class="con">
+          <span>LL PixelFun，是由设计师</span>
+          <div class="sort">
+            LL PixelFun，是由设计师 LUKELEE_ 设计的一款免费可商用的西文电子风像素字体，像素风格本身是由极其简单的元素，构成极度复杂的画面，也正因如此它具有巨大的创作潜力，能够给予创造者无限的发挥空间，而这种风格非常适用于像素机能风，故障风、赛博朋克风等设计场景。
+          LL PixelFun，是由设计师 LUKELEE_ 设计的一款免费可商用的西文电子风像素字体，像素风格本身是由极其简单的元素，构成极度复杂的画面，也正因如此它具有巨大的创作潜力，能够给予创造者无限的发挥空间，而这种风格非常适用于像素机能风，故障风、赛博朋克风等设计场景。
+          <img src="img/背景图1/背景图1（按钮抓）.PNG" alt="">
+          </div>
+
+
+        </div>
+
+
+        <a href="page4.html" class="fh">返回</a>
+        
+      </div>
+    </div>
+
+
+    <footer style="text-align: center;">
+      <a href="page1.html">开始选购</a><a href="page3.html">Q&A</a><a href="">小卡一览</a>
+
+      <img src="img/背景图3/小熊猫3.png" alt="">
+    </footer>
+  </div>
+
+
+
+  <div id="imgShow">
+    <img src="" alt="">
+  </div>
+
+
+  <script>
+    const imgList = document.querySelectorAll('.center .sort img')
+    const imgBox = document.querySelector('#imgShow')
+    const img = imgBox.querySelector('img')
+    imgList.forEach((tag, index) => {
+      tag.addEventListener('click', () => {
+        img.src = tag.src
+        imgBox.classList.add('open')
+      })
+    })
+
+
+    imgBox.addEventListener('click', tag => {
+      tag.stopPropagation()
+      imgBox.classList.remove('open')
+    })
+  </script>
+</body>
+</html>
